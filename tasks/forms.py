@@ -5,7 +5,7 @@ from .models import Task
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
-        fields = ['title','descripcion','important']
+        fields = ['title','description','important']
         widgets= {
             'titulo': forms.TextInput(attrs={'class': 'form-control' , 'placeholder': 'Escribe un titulo'}),
             'descripción': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Escribe una decripción'}),
